@@ -1,4 +1,3 @@
-# app_flask.py
 
 from flask import Flask, request, render_template
 import joblib
