@@ -1,0 +1,9 @@
+url,label
+http://secure-paypal.com.login.verify-account.xyz/Confirm?user=test%40example.com,1
+http://accounts.google.com.secure-login-example.xyz/signin,1
+http://login.paypal-security.verify-info.example/confirm,1
+http://bit.ly/2fakeid?redirect=http%3A%2F%2Fmalicious.example.com,1
+https://www.google.com/,0
+https://www.github.com/,0
+https://www.paypal.com/us/home,0
+https://www.microsoft.com/en-us,0

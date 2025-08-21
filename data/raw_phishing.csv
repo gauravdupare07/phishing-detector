@@ -1,0 +1,5 @@
+url,label
+http://secure-paypal.com.login.verify-account.xyz/Confirm?user=test@example.com,1
+http://accounts.google.com.secure-login-example.xyz/signin,1
+http://login.paypal-security.verify-info.example/confirm,1
+http://bit.ly/2fakeid?redirect=http://malicious.example.com,1

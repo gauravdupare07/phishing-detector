@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing URL Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="themeButton">🌙 Dark Mode</button>
+  </div>
+
+  <div class="container">
+    <h2>🔍 Phishing URL Detector</h2>
+    <form method="post" action="/predict">
+      <label for="url">Enter URL:</label>
+      <input type="text" id="url" name="url" placeholder="https://example.com" required>
+      <button type="submit">Check URL</button>
+    </form>
+
+    {% if prediction is defined %}
+      <div class="result">
+        <h3>Result:</h3>
+        <p><b>URL:</b> {{ url }}</p>
+        <p><b>Prediction:</b>
+          {% if prediction == 1 %}
+            🚨 <span class="phishing">Phishing</span>
+          {% else %}
+            ✅ <span class="legit">Legitimate</span>
+          {% endif %}
+        </p>
+        {% if probability is not none %}
+          <p><b>Confidence:</b> {{ (probability * 100) | round(2) }}%</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
