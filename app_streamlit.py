@@ -1,4 +1,3 @@
-# app_streamlit.py
 import streamlit as st
 from infer import Detector
 from features import extract_features
