@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # 🔍 Phishing URL Detector
 
 ## 🌐 Live Demo
@@ -20,7 +20,7 @@ A simple **machine learning-based web app** built with **Flask** that detects wh
 ---
 
 ## 📂 Project Structure
-
+```markdown
 
 phishing_detector/
 │── app_flask.py # Flask application
