@@ -3,6 +3,11 @@
 ```markdown
 # 🔍 Phishing URL Detector
 
+## 🌐 Live Demo
+
+[🔗 View Phishing URL Detector live](https://phishing-detector-c1t4.onrender.com/)  
+
+
 A simple **machine learning-based web app** built with **Flask** that detects whether a given URL is **legitimate or phishing**.
 
 ## 🚀 Features
